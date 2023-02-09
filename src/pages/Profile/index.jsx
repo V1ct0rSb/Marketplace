@@ -17,6 +17,7 @@ export const Profile = () => {
 
   return (
     <div className="container-profile">
+      <h1>My Profile</h1>
       <img src={user.url || defaultImage} alt="Profile" />
       <p>
         <span>Name: </span>
