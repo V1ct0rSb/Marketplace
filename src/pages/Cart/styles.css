@@ -1,0 +1,70 @@
+.container-cart :is(h1, h3) {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cart-product {
+  width: 400px;
+  height: 400px;
+  padding: 25px;
+  background: var(--background-card-color);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart-product h4 {
+  max-width: 35ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cart-product img {
+  margin: auto;
+
+  /* Removendo fundo da imagem */
+  mix-blend-mode: multiply;
+
+  /*Manter a proporção da imagem*/
+  max-width: 300px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
+
+.cart-product button {
+  margin-top: 10px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container-cart .button-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.button-cart:hover {
+  background: var(--hover-color);
+  transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 700px) {
+  .cart-product {
+    width: 350px;
+    margin-top: 15px;
+  }
+}

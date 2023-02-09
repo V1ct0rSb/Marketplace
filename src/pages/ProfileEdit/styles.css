@@ -1,0 +1,58 @@
+.container-edit {
+  height: 500px;
+  width: 400px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  background-color: var(--primary-color);
+  margin-top: 200px;
+  border-radius: 20px;
+}
+
+form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+form input:hover {
+  background: var(--hover-color);
+}
+
+.container-edit button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.container-edit button:hover {
+  background: var(--hover-color);
+  transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 1360px) {
+  .container-edit {
+    margin-top: 60px;
+    width: 350px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container-edit {
+    width: 350px;
+  }
+}
